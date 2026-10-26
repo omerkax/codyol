@@ -1,16 +1,16 @@
 import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
-import PageHero from '@/components/shared/PageHero';
 import TermsConditionContent from '@/components/privacy/PrivacyContent';
-import { defaultMetadata } from '@/utils/generateMetaData';
+import { generateMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 
-export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Privacy - NextSaaS',
-};
+export const metadata: Metadata = generateMetadata(
+  'Gizlilik Politikası - Codyol',
+  'Codyol web sitesinde kişisel verilerin nasıl toplandığı, kullanıldığı ve korunduğuna dair gizlilik politikası.',
+  'https://codyol.com/privacy'
+);
 
 const Privacy = () => {
   return (

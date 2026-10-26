@@ -16,11 +16,11 @@ const Success = () => {
         <div className="space-y-[70px]">  
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.1}>
-              <h2 className="text-heading-8">Gerçek projeler, ölçülebilir sonuçlar.</h2>
+              <h1 className="text-heading-8">Hayata geçirdiğimiz projeler</h1>
             </RevealAnimation>
              <RevealAnimation delay={0.2}>
               <h4 className="max-w-[738px] mx-auto text-heading-6">
-                Yaptığımız bazı web projeleri:
+                Farklı sektörlerden markalar için tasarlayıp geliştirdiğimiz dijital ürünler.
               </h4>
             </RevealAnimation>
           </div>

@@ -39,7 +39,7 @@ export const navigationItems: NavigationItem[] = [
   },
   {
     id: 'pricing',
-    label: 'Fiyatlandırma',
+    label: 'Paketler',
     href: '/pricing',
     hasDropdown: false,
   },

@@ -12,6 +12,7 @@ const VisionStatement = () => {
     <section className="pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] pt-[100px]">
       <div className="main-container space-y-14 md:space-y-[70px]">
         <SectionHeader
+          as="h1"
           title="Codyol, iş dünyasının geleceğini şekillendiriyor."
           description=" Yapay zeka, özel yazılım ve otomasyon çözümleriyle girişimler ve kurumlar için ölçeklenebilir dijital ürünler geliştiriyoruz."
         />

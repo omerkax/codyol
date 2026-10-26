@@ -52,8 +52,10 @@ const ThemeToggle = ({ defaultTheme }: ThemeToggleProps) => {
     <button
       id="theme-toggle"
       onClick={toggleTheme}
-      aria-label="Toggle theme"
-      className="bg-background-8 fixed right-0 bottom-5 !z-[9999] flex size-12 cursor-pointer items-center justify-center rounded-l-2xl transition-colors duration-200 hover:opacity-80 dark:bg-white">
+      aria-label="Açık/koyu temayı değiştir"
+      title="Açık/koyu temayı değiştir"
+      type="button"
+      className="bg-background-8 flex size-10 cursor-pointer items-center justify-center rounded-full transition-colors duration-200 hover:opacity-80 dark:bg-white">
       {currentTheme === 'dark' ? (
         <span id="dark-theme-icon">
           <svg
@@ -62,7 +64,7 @@ const ThemeToggle = ({ defaultTheme }: ThemeToggleProps) => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="size-6 stroke-black">
+            className="size-5 stroke-black">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -78,7 +80,7 @@ const ThemeToggle = ({ defaultTheme }: ThemeToggleProps) => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="size-6 stroke-white">
+            className="size-5 stroke-white">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

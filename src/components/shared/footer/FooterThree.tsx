@@ -38,24 +38,14 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
             <RevealAnimation delay={0.3}>
               <div className="xl:max-w-[306px]">
                 <figure>
-                  <Image src={LightLogo} className="dark:hidden" alt="NextSass" />
-                  <Image src={DarkLogo} className="hidden dark:block" alt="NextSass" />
+                  <Image src={LightLogo} className="dark:hidden" alt="Codyol" />
+                  <Image src={DarkLogo} className="hidden dark:block" alt="Codyol" />
                 </figure>
                 <p className="text-secondary dark:text-accent mt-4 mb-7">
                    Codyol, yapay zeka destekli dijital çözümler ve SaaS ürünleri geliştiren, tüm dijital ihtiyaçları tek çatı altında toplayan bir teknoloji stüdyosudur.
                 </p>
                 <div className="flex items-center gap-3">
-                  <Link target="_blank" href="https://www.facebook.com" className="footer-social-link">
-                    <span className="sr-only">Facebook</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="16" viewBox="0 0 7 16" fill="none">
-                      <path
-                        d="M2.25 15C2.25 15.4142 2.58579 15.75 3 15.75C3.41421 15.75 3.75 15.4142 3.75 15H2.25ZM3.75 7C3.75 6.58579 3.41421 6.25 3 6.25C2.58579 6.25 2.25 6.58579 2.25 7H3.75ZM6 1.75C6.41421 1.75 6.75 1.41421 6.75 1C6.75 0.585786 6.41421 0.25 6 0.25V1.75ZM3 4H2.25H3ZM2.25 7C2.25 7.41421 2.58579 7.75 3 7.75C3.41421 7.75 3.75 7.41421 3.75 7H2.25ZM3 6.25C2.58579 6.25 2.25 6.58579 2.25 7C2.25 7.41421 2.58579 7.75 3 7.75V6.25ZM5 7.75C5.41421 7.75 5.75 7.41421 5.75 7C5.75 6.58579 5.41421 6.25 5 6.25V7.75ZM3 7.75C3.41421 7.75 3.75 7.41421 3.75 7C3.75 6.58579 3.41421 6.25 3 6.25V7.75ZM1 6.25C0.585786 6.25 0.25 6.58579 0.25 7C0.25 7.41421 0.585786 7.75 1 7.75V6.25ZM3 15H3.75V7H3H2.25V15H3ZM6 1V0.25C3.92893 0.25 2.25 1.92893 2.25 4H3H3.75C3.75 2.75736 4.75736 1.75 6 1.75V1ZM3 4H2.25V7H3H3.75V4H3ZM3 7V7.75H5V7V6.25H3V7ZM3 7V6.25H1V7V7.75H3V7Z"
-                        className="fill-secondary dark:fill-accent"
-                      />
-                    </svg>
-                  </Link>
-                  <div className="bg-stroke-1 dark:bg-stroke-8 h-5 w-px"></div>
-                  <Link target="_blank" href="https://www.instagram.com/codyoltr" className="footer-social-link">
+                  <Link target="_blank" href="https://www.instagram.com/codyoltr" rel="noopener noreferrer" className="footer-social-link">
                     <span className="sr-only">Instagram</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path
@@ -98,7 +88,7 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                     </svg>
                   </Link>
                   <div className="bg-stroke-1 dark:bg-stroke-8 h-5 w-px"></div>
-                  <Link target="_blank" href="https://www.linkedin.com" className="footer-social-link">
+                  <Link target="_blank" href="https://www.linkedin.com/company/codyol" rel="noopener noreferrer" className="footer-social-link">
                     <span className="sr-only">LinkedIn</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
                       <path
@@ -136,6 +126,11 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                       </Link>
                     </li>
                     <li>
+                      <Link href="/pricing" className="footer-link-v2">
+                        Paketler
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/contact" className="footer-link-v2">
                         İletişim
                       </Link>
@@ -148,13 +143,27 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
               <RevealAnimation delay={0.5}>
                 <div className="space-y-8">
                   <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                    Kaynaklar
+                    İletişim
                   </p>
                   <ul className="space-y-5">
                     <li>
-                      <Link href="/pricing" className="footer-link-v2">
-                        Fiyatlandırma
-                      </Link>
+                      <a href="mailto:info@codyol.com" className="footer-link-v2">
+                        info@codyol.com
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:+905074017765" className="footer-link-v2">
+                        +90 (507) 401 77 65
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wa.me/905074017765"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-link-v2">
+                        WhatsApp ile yazın
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -186,13 +195,15 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
         <div className="relative overflow-hidden pt-6 pb-[60px] text-center">
           <FooterDivider className="bg-stroke-2 dark:bg-accent/5" />
           <RevealAnimation delay={0.7} offset={10} start="top 105%">
-            <p className="text-secondary dark:text-accent/60">
-              Copyright &copy; {new Date().getFullYear()} Codyol – Yapay Zeka Destekli Dijital Çözümler Stüdyosu
-            </p>
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <p className="text-secondary dark:text-accent/60">
+                &copy; {new Date().getFullYear()} Codyol. Tüm hakları saklıdır.
+              </p>
+              <ThemeToggle defaultTheme={defaultTheme} />
+            </div>
           </RevealAnimation>
         </div>
       </div>
-      <ThemeToggle defaultTheme={defaultTheme} />
     </footer>
   );
 };

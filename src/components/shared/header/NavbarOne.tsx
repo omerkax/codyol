@@ -24,7 +24,10 @@ interface NavbarOneProps {
   navItemClass?: string;
 }
 
-const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName }) => {
+// Tüm sayfalarda "Teklif Al" butonu aynı görünsün
+const NAV_CTA_CLASS = 'btn-secondary hover:btn-primary dark:btn-accent dark:hover:btn-white-dark';
+
+const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor }) => {
   const { isScrolled } = useNavbarScroll(100);
 
   return (
@@ -70,7 +73,7 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
               })}
             </ul>
           </nav>
-          <NavCTAButton href="/contact" btnClassName={btnClassName} label="Teklif Al" useQuoteModal />
+          <NavCTAButton href="/contact" btnClassName={NAV_CTA_CLASS} label="Teklif Al" useQuoteModal />
           {/* mobile menu btn */}
           <MobileMenuButton />
         </div>

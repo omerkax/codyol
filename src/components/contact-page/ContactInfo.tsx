@@ -14,7 +14,7 @@ const contactInfoItems = [
     id: 1,
     icon: homeIcon,
     title: 'Adresimiz',
-    content: 'Türkiye',
+    content: 'Yalova, Türkiye',
   },
   {
     id: 2,
@@ -28,13 +28,13 @@ const contactInfoItems = [
     icon: phoneIcon,
     title: 'Telefon',
     content: '+90 (507) 401 77 65',
-    link: 'tel:+905000000000',
+    link: 'tel:+905074017765',
   },
 ];
 
 const ContactInfo = () => {
   return (
-    <section className="pb-4 md:pb-16 lg:pb-20 xl:pb-[100px]" aria-label="Contact Information and Form">
+    <section className="pb-4 md:pb-16 lg:pb-20 xl:pb-[100px]" aria-label="İletişim bilgileri ve formu">
       <div className="main-container">
         <div className="space-y-[70px]">
           {/* heading  */}
@@ -50,6 +50,7 @@ const ContactInfo = () => {
           </div> */}
           <section className="pt-8">
             <SectionHeader
+              as="h1"
               title="Projeniz, fikriniz veya dijital ihtiyaçlarınız için bize ulaşın."
               description="Sorularınız, teknik destek ihtiyacınız veya danışmanlık talebiniz için ekibimiz burada. En kısa sürede size geri dönüş yapacağız."
             />
@@ -178,9 +179,9 @@ const ContactInfo = () => {
                     htmlFor="terms"
                     className="text-tagline-3 cursor-pointer text-secondary/60 dark:text-accent/60">
                     <Link href="/terms-conditions" className="text-primary-500 underline text-tagline-3">
-                      Kullanım koşulları
+                      Kullanım koşullarını
                     </Link>
-                    {' '}nı kabul ediyorum
+                    {' '}kabul ediyorum
                   </label>
                 </fieldset>
                 {/* submit button */}

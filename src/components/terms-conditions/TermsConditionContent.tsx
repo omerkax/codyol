@@ -7,7 +7,7 @@ const TermsConditionContent = () => {
       <div className="main-container">
         <RevealAnimation delay={0.3}>
           <div className="space-y-3">
-            <h2>Kullanım Koşulları</h2>
+            <h1 className="text-heading-5 sm:text-heading-4 md:text-heading-3 xl:text-heading-2 font-normal">Kullanım Koşulları</h1>
             <div className="space-y-7">
               <p>
                 Bu web sitesi (codyol.com) Codyol Digital Agency (bundan sonra “Codyol” olarak anılacaktır) tarafından işletilmektedir. Siteyi ziyaret eden veya hizmetlerimizden yararlanan herkes aşağıda belirtilen şartları kabul etmiş sayılır.

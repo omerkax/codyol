@@ -16,11 +16,11 @@ const Solutions = () => {
           <div className="col-span-12 lg:col-span-6">
             <div className="space-y-5 lg:mt-[114px] lg:text-left sm:text-center">
               <RevealAnimation delay={0.1}>
-                <span className="badge badge-yellow-v2">Neden Codyol?</span>
+                <span className="badge badge-yellow-v2">Nasıl çalışıyoruz?</span>
               </RevealAnimation>
               <div className="space-y-3 max-w-[595px] lg:mx-0 mx-auto">
                 <RevealAnimation delay={0.2}>
-                  <h2>Dijital süreçlerinizi ölçer, geliştirir ve büyütürüz.</h2>
+                  <h2>Ölçüyor, takip ediyor, veriyle büyütüyoruz.</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
                   <p>

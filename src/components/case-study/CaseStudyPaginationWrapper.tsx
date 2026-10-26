@@ -41,7 +41,7 @@ const CaseStudyPaginationWrapper = ({ caseStudies }: CaseStudyPaginationWrapperP
                   {/* <Link href={`/case-study/${caseStudy.slug}`}> */}
                     <Image
                       src={caseStudy.thumbnail}
-                      alt="Case study thumbnail"
+                      alt={`${caseStudy.title} proje görseli`}
                       width={600}
                       height={200}
                       className="size-full object-cover"

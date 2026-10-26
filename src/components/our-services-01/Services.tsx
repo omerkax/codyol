@@ -19,7 +19,7 @@ const servicesData = getMarkDownData('src/data/services')
           </RevealAnimation> */}
           {/* <div className="space-y-3">
             <RevealAnimation delay={0.3}>
-              <h2 className="max-w-[878px] mx-auto">Dijital projelerinizi uçtan uca tasarlıyor, geliştiriyor ve büyütüyoruz.</h2>
+              <h1 className="max-w-[878px] mx-auto text-heading-5 sm:text-heading-4 md:text-heading-3 xl:text-heading-2 font-normal">Dijital projelerinizi uçtan uca tasarlıyor, geliştiriyor ve büyütüyoruz.</h1>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[700px] mx-auto">
@@ -29,6 +29,7 @@ const servicesData = getMarkDownData('src/data/services')
           </div>
         </div> */}
         <SectionHeader
+  as="h1"
   title="Dijital projelerinizi uçtan uca tasarlıyor, geliştiriyor ve büyütüyoruz."
   description="SaaS ürünlerinden özel yazılıma, yapay zeka entegrasyonlarından dijital pazarlamaya kadar tüm süreçleri tek çatı altında yönetiyoruz."
 />

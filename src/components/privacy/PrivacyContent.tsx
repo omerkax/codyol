@@ -167,7 +167,7 @@ const PrivacyContent = () => {
           {/* Header Section */}
           <div className="space-y-2">
             <RevealAnimation delay={0.1}>
-              <h2>Gizlilik Politikası</h2>
+              <h1 className="text-heading-5 sm:text-heading-4 md:text-heading-3 xl:text-heading-2 font-normal">Gizlilik Politikası</h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p>
@@ -233,11 +233,8 @@ const PrivacyContent = () => {
           <RevealAnimation delay={0.6}>
             <div className="space-y-6">
               <div className="space-y-2">
-                <h4>Kişisel Verilerin Paylaşımı</h4>
-                <p>
-                  We share your Personal Information with trusted third-party service providers to help us operate
-                  effectively:
-                </p>
+                <h4>{sharingInfoSection.title}</h4>
+                <p>{sharingInfoSection.description}</p>
               </div>
               <ul className="space-y-3 list-inside text-tagline-1 font-normal text-secondary/60 dark:text-accent/60">
                 {sharingInfoSection.items.map((item, index) => (

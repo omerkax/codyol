@@ -18,7 +18,8 @@ const Pricing = () => {
         <div className="flex flex-col items-center text-center">
       
           <SectionHeader
-            title="İhtiyaçlarınıza en uygun fiyatlandırma planını seçin."
+            as="h1"
+            title="İhtiyacınıza uygun paketi seçin"
           />
           <RevealAnimation delay={0.4}>
             <div className="relative z-0">
@@ -44,7 +45,7 @@ const Pricing = () => {
             {/* Price Card 1 */}
             <RevealAnimation delay={0.3} instant>
               <div className="bg-background-3 dark:bg-background-5 flex-1 p-8 rounded-[20px] max-lg:w-full">
-                <h3 className="mb-2 font-normal text-heading-5">Başlanıç</h3>
+                <h3 className="mb-2 font-normal text-heading-5">Başlangıç</h3>
                 <p className="mb-6 max-w-[250px]">Küçük işletmeler ve yeni girişimler için.</p>
                 {isAnnual ? (
                   <div className="price-year mb-7">

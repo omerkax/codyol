@@ -1,16 +1,16 @@
 import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
-import PageHero from '@/components/shared/PageHero';
 import TermsConditionContent from '@/components/terms-conditions/TermsConditionContent';
-import { defaultMetadata } from '@/utils/generateMetaData';
+import { generateMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 
-export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Terms & Conditions - NextSaaS',
-};
+export const metadata: Metadata = generateMetadata(
+  'Kullanım Koşulları - Codyol',
+  'codyol.com web sitesinin ve Codyol hizmetlerinin kullanım koşulları.',
+  'https://codyol.com/terms-conditions'
+);
 
 const TermsConditions = () => {
   return (

@@ -1,6 +1,7 @@
 import SmoothScrollProvider from '@/components/shared/SmoothScroll';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
 import QuoteModal from '@/components/shared/QuoteModal';
+import WhatsAppButton from '@/components/shared/WhatsAppButton';
 import { AppContextProvider } from '@/context/AppContext';
 import { ModalProvider } from '@/context/ModalContext';
 import { interTight } from '@/utils/font';
@@ -28,6 +29,7 @@ export default function RootLayout({
                     <SmoothScrollProvider>
                       {children}
                       <QuoteModal />
+                      <WhatsAppButton />
                     </SmoothScrollProvider>
                   </Suspense>
                 </ThemeProvider>

@@ -71,11 +71,11 @@ const CTAV1 = ({
               ctaCheckListData={[
                 {
                   id: '1',
-                  text: 'Kredi kartı gerekmez',
+                  text: 'Ücretsiz ön görüşme',
                 },
                 {
                   id: '2',
-                  text: 'Ücretsiz danışmanlık',
+                  text: 'Size özel teklif',
                 },
               ]}
               listTextClass={listTextClass}

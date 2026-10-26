@@ -11,8 +11,8 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = generateMetadata(
-  'Fiyatlandırma - Codyol',
-  'Codyol\'un esnek fiyatlandırma planları. Başlangıç, Büyüme ve Kurumsal paketlerimizle dijital dönüşümünüze başlayın.',
+  'Paketler - Codyol',
+  'Codyol hizmet paketleri: Başlangıç, Büyüme ve Kurumsal. İhtiyacınıza göre size özel teklif hazırlıyoruz.',
   'https://codyol.com/pricing'
 );
 

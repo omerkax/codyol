@@ -32,11 +32,11 @@ interface RevealAnimationProps {
 
 const RevealAnimation = ({
   children,
-  duration = 0.6,
+  duration = 0.5,
   delay = 0,
-  offset = 60,
+  offset = 24,
   instant = false,
-  start = 'top 90%',
+  start = 'top 95%',
   end = 'top 50%',
   direction = 'down',
   useSpring = false,
@@ -57,6 +57,12 @@ const RevealAnimation = ({
     element.style.opacity = '1';
     element.style.filter = 'blur(0)';
 
+    // Hareket azaltmayı tercih eden kullanıcılar için animasyon yok
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    // İçerik geç görünmesin: gecikmeleri yarıya indir, 0.35 sn ile sınırla
+    const effectiveDelay = Math.min(delay * 0.5, 0.35);
+
     // Set animation properties based on animation type
     let animationProps: gsap.TweenVars;
 
@@ -66,7 +72,7 @@ const RevealAnimation = ({
         opacity: 1,
         filter: 'blur(0)',
         duration: duration,
-        delay: delay,
+        delay: effectiveDelay,
         ease: useSpring && spring ? spring : 'power2.out',
       };
 
@@ -78,9 +84,9 @@ const RevealAnimation = ({
       // gsap.from() - animate FROM the specified values to normal
       animationProps = {
         opacity: 0,
-        filter: 'blur(16px)',
+        filter: 'blur(4px)',
         duration: duration,
-        delay: delay,
+        delay: effectiveDelay,
         ease: useSpring && spring ? spring : 'power2.out',
       };
 
@@ -97,6 +103,7 @@ const RevealAnimation = ({
         start: start,
         end: end,
         scrub: false,
+        once: true,
       };
     }
 
