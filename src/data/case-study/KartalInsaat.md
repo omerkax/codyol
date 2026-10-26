@@ -13,7 +13,7 @@ after:
   - '98%+ accuracy'
   - '45 minutes'
   - 'Automated, audit-ready compliance'
-thumbnail: '/images/avatar/KartalInsaat.png'
+thumbnail: '/images/codyol/projects/KartalInsaat.webp'
 keyFeatures:
   - 'AI-driven risk assessment models'
   - 'Automated compliance monitoring'

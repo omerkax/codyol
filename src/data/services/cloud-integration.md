@@ -4,6 +4,7 @@ description: 'İş süreçlerinizi analiz ediyor, teknolojiyle daha verimli ve s
 order : 6
 showOnHome: true
 icon: 'ns-shape-52'
+image3d: '/images/codyol/3d/integration.webp'
 image: '/images/home-page-1/services-cloud-integration.svg'
 coverImg: '/images/services/service-cloud-integration-cover.png'
 userReview:

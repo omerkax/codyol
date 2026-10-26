@@ -13,7 +13,7 @@ after:
   - '98% scheduling accuracy'
   - 'Real-time patient data processing'
   - '30% lower operational costs'
-thumbnail: '/images/avatar/SirmaDenizcilik.png'
+thumbnail: '/images/codyol/projects/SirmaDenizcilik.webp'
 keyFeatures:
   - 'AI-powered patient scheduling'
   - 'Automated administrative task processing'

@@ -13,7 +13,7 @@ after:
   - '95% grid efficiency'
   - '25% lower maintenance costs'
   - 'Accurate real-time demand forecasting'
-thumbnail: '/images/avatar/NarmanogluInsaatMuhendislik.png'
+thumbnail: '/images/codyol/projects/NarmanogluInsaatMuhendislik.webp'
 keyFeatures:
   - 'AI-powered energy output prediction'
   - 'Real-time grid efficiency monitoring'

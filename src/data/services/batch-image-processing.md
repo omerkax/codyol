@@ -6,6 +6,7 @@ showOnHome: true
 coverImg: '/images/home-page-36/service-05.png'
 newFeature: true
 icon: 'ns-shape-21'
+image3d: '/images/codyol/3d/ai.webp'
 image: '/images/home-page-36/service-05.png'
 userReview:
   name: 'Henry Collins'

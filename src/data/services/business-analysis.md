@@ -4,6 +4,7 @@ description: 'Standart çözümlerin yetmediği noktalarda, iş süreçlerinize 
 order: 4
 showOnHome: true
 icon: 'ns-shape-17'
+image3d: '/images/codyol/3d/mvp.webp'
 image: '/images/home-page-1/services-business-analysis.svg'
 coverImg: '/images/services/service-business-analysis-cover.png'
 userReview:

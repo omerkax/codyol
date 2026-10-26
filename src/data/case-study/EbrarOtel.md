@@ -13,7 +13,7 @@ after:
   - 'Personalized learning paths'
   - 'Automated grading and instant feedback'
   - 'Seamless remote & hybrid learning'
-thumbnail: '/images/avatar/EbrarOtel.png'
+thumbnail: '/images/codyol/projects/EbrarOtel.webp'
 keyFeatures:
   - 'AI-powered personalized learning paths'
   - 'Automated grading and feedback system'

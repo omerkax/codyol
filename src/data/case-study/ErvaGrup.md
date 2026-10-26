@@ -13,7 +13,7 @@ after:
   - '95%+'
   - '30 minutes'
   - '4x faster'
-thumbnail: '/images/avatar/ErvaGrup.png'
+thumbnail: '/images/codyol/projects/ErvaGrup.webp'
 keyFeatures:
   - 'Predictive customer behavior analytics'
   - 'Personalized recommendation engine'

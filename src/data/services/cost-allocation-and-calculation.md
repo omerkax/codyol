@@ -3,7 +3,8 @@ title: 'SaaS & Özel Yazılım Geliştirme'
 description: 'Next.js, Node.js ve modern teknolojilerle ölçeklenebilir SaaS ve özel yazılımlar geliştiriyoruz.'
 featured: true
 order: 2
-icon: 'ns-shape-23' 
+icon: 'ns-shape-23'
+image3d: '/images/codyol/3d/saas.webp' 
 image: '/images/home-page-1/services-big-data-consulting.svg'
 coverImg: '/images/services/service-big-data-consulting-cover.png'
 userReview:

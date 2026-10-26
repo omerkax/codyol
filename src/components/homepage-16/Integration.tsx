@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import StackCardItem from '../ui/stack-card/StackCardItem';
@@ -6,22 +7,22 @@ import StackCardWrapper from '../ui/stack-card/StackCardWrapper';
 
 const stackCards = [
   {
-    icon: 'ns-shape-19',
+    image: '/images/codyol/3d/startup.webp',
     title: 'Girişimler',
     description: 'MVP geliştirme, ürün doğrulama ve ölçeklenebilir altyapılarla fikirlerinizi çalışan ürünlere dönüştürüyoruz.',
   },
   {
-    icon: 'ns-shape-35',
+    image: '/images/codyol/3d/team.webp',
     title: 'İş Ekipleri',
     description: 'Operasyonları dijitalleştiren, süreçleri sadeleştiren ve verimliliği artıran yazılım çözümleri geliştiriyoruz.',
   },
   {
-    icon: 'ns-shape-4',
+    image: '/images/codyol/3d/product.webp',
     title: 'Ürün Sahipleri & Proje Yöneticileri',
     description: 'Teknik ekibi olmayan ya da ürün geliştirme sürecini dışarıdan yönetmek isteyen ekiplerle, süreci baştan sona birlikte yürütüyoruz.',
   },
   {
-    icon: 'ns-shape-21',
+    image: '/images/codyol/3d/education.webp',
     title: 'Eğitim & Kurumsal Yapılar',
     description: 'Eğitim, başvuru ve süreç yönetimi gibi alanlarda kuruma özel dijital sistemler geliştiriyoruz.',
   },
@@ -34,7 +35,7 @@ const Integration = () => {
         <div className="flex lg:flex-row flex-col items-start lg:gap-[100px] md:gap-y-20 gap-y-10 pt-14 md:pt-16 lg:pt-[88px] xl:pt-[150px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[150px]">
           <div className="w-full lg:flex-1 lg:sticky lg:top-28 lg:max-w-full max-w-[520px] lg:mx-0 mx-auto text-center lg:text-left">
             <RevealAnimation delay={0.2}>
-              <span className="badge badge-green mb-5"> Birlikte Çalıştıklarımız </span>
+              <span className="badge badge-green mb-5">Kimlerle çalışıyoruz?</span>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <h2 className="mb-3 whitespace-normal">
@@ -65,7 +66,7 @@ const Integration = () => {
             {stackCards.map((card, index) => (
               <StackCardItem key={index + 1}>
                 <div className="p-8 bg-background-1  dark:bg-background-6 rounded-xl space-y-6 border border-stroke-1/90 dark:border-stroke-5 max-sm:min-h-[255px]">
-                  <span className={`block ${card.icon} text-heading-2 text-secondary  dark:text-accent`} />
+                  <Image src={card.image} alt="" aria-hidden="true" width={72} height={72} className="size-[72px] object-contain" />
                   <div className="space-y-1">
                     <h5>{card.title}</h5>
                     <p>{card.description}</p>

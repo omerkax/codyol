@@ -1,6 +1,7 @@
 import { IService } from '@/interface';
 import { cn } from '@/utils/cn';
 import getMarkDownData from '@/utils/getMarkDownData';
+import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
@@ -11,7 +12,7 @@ const Services = () => {
  const servicesData = getMarkDownData('src/data/services')
   .filter(service => service.featured)
   .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
-  .slice(0, 5);
+  .slice(0, 5) as IService[];
 
 
 
@@ -33,10 +34,22 @@ const Services = () => {
             <RevealAnimation key={item.slug} delay={0.5 + index * 0.1}>
               <div
                 className={cn(
-                  'col-span-12 sm:col-span-6  px-6 py-8 rounded-[20px] bg-white dark:bg-background-6 flex flex-col items-start space-y-6',
-                  index >= 3 ? 'lg:col-span-6' : 'lg:col-span-4',
+                  'group col-span-12 sm:col-span-6 px-6 py-8 rounded-[20px] bg-white dark:bg-background-6 flex flex-col items-start space-y-6 transition-shadow duration-300 hover:shadow-[0_20px_50px_-20px_rgba(230,45,94,0.25)]',
+                  index < 2 ? 'lg:col-span-6' : 'lg:col-span-4',
+                  index === 4 && 'sm:col-span-12 lg:col-span-4',
                 )}>
-                <span className={cn('text-[52px] text-secondary dark:text-accent', item.icon)}> </span>
+                {item.image3d ? (
+                  <Image
+                    src={item.image3d}
+                    alt=""
+                    aria-hidden="true"
+                    width={88}
+                    height={88}
+                    className="size-[88px] object-contain transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-3"
+                  />
+                ) : (
+                  <span className={cn('text-[52px] text-secondary dark:text-accent', item.icon)}> </span>
+                )}
                 <div>
                   <h5 className="mb-2 max-md:text-heading-6">{item.title}</h5>
                   <p className="">{item.description}</p>

@@ -1,6 +1,6 @@
 ---
 title: 'Alesta Grup'
-description: 'Yüksek mühendislik standartlarıyla tasarlanan denizcilik projeleri. Estetik, dayanıklılık ve işlevsellik odaklı çözümlerle her aşamada kaliteyi ön planda tutan bir yaklaşım.'
+description: 'Denizcilik ve yat sektöründe faaliyet gösteren Alesta Grup için, projelerini ve mühendislik yetkinliğini öne çıkaran, mobil uyumlu bir kurumsal web sitesi tasarlandı.'
 order : 6
 featured: true
 before:
@@ -13,7 +13,7 @@ after:
   - '40% lower support costs'
   - 'Always-on availability'
   - '85% first-contact resolution'
-thumbnail: '/images/avatar/AlestaGrup.png'
+thumbnail: '/images/codyol/projects/AlestaGrup.webp'
 keyFeatures:
   - 'AI-powered virtual assistant'
   - '24/7 automated customer support'

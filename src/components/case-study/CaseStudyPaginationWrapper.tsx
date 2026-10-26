@@ -1,76 +1,41 @@
-'use client';
-
 import { ICaseStudy } from '@/interface';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
 import RevealAnimation from '../animation/RevealAnimation';
-import Pagination from '../shared/Pagination';
-import LinkButton from '../ui/button/LinkButton';
 
 interface CaseStudyPaginationWrapperProps {
   caseStudies: ICaseStudy[];
 }
 
+// Proje kartları: tarayıcı çerçeveli ekran görüntüsü + başlık + açıklama
 const CaseStudyPaginationWrapper = ({ caseStudies }: CaseStudyPaginationWrapperProps) => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const caseStudiesPerPage = 7;
-
-  // Calculate pagination
-  const totalPages = Math.ceil(caseStudies.length / caseStudiesPerPage);
-  const startIndex = (currentPage - 1) * caseStudiesPerPage;
-  const endIndex = startIndex + caseStudiesPerPage;
-  const currentCaseStudies = caseStudies?.slice(startIndex, endIndex);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-  };
-
   return (
-    <>
-      {/* Case Study Cards */}
-      <div className="grid grid-cols-12 items-start justify-center gap-8">
-        {currentCaseStudies?.map((caseStudy, index) => ( 
-          <RevealAnimation delay={0.2 + index * 0.1} key={caseStudy.slug}>
-            <article
-              className="group max-w-[409px] col-span-12 md:col-span-6 lg:col-span-4"
-              itemScope
-              itemType="http://schema.org/Article">
-              <div className="bg-background-1 dark:bg-background-6 rounded-[20px] scale-100 hover:scale-[102%] transition-transform duration-500 hover:transition-transform hover:duration-500">
-                <figure className="max-w-[600px] h-[200px] overflow-hidden rounded-t-[20px]">
-                  {/* <Link href={`/case-study/${caseStudy.slug}`}> */}
-                    <Image
-                      src={caseStudy.thumbnail}
-                      alt={`${caseStudy.title} proje görseli`}
-                      width={600}
-                      height={200}
-                      className="size-full object-cover"
-                      itemProp="image"
-                    />
-                  {/* </Link> */}
-                </figure>
-                <div className="p-6 space-y-6">
-                  <div className="space-y-2">
-                    {/* <Link href={`/case-study/${caseStudy.slug}`}> */}
-                      <h3 className="text-heading-5 line-clamp-2" itemProp="headline">
-                        {caseStudy.title}
-                      </h3>
-                      <div className="space-y-60">
-                        <p itemProp="description" className="line-clamp-60">
-                          {caseStudy.description}
-                        </p>
-                      </div>
-                    {/* </Link> */}
-                  </div>
-                  <div>
-                  </div>
-                </div>
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {caseStudies.map((caseStudy, index) => (
+        <RevealAnimation delay={0.1 + index * 0.05} key={caseStudy.slug}>
+          <article className="group h-full" itemScope itemType="http://schema.org/CreativeWork">
+            <div className="bg-background-1 dark:bg-background-6 flex h-full flex-col overflow-hidden rounded-[20px] transition-shadow duration-500 hover:shadow-[0_24px_60px_-24px_rgba(230,45,94,0.35)]">
+              <figure className="relative overflow-hidden bg-[linear-gradient(135deg,#fde7ef_0%,#f6f3f7_55%,#fbe2ec_100%)] px-5 pt-6 dark:bg-[linear-gradient(135deg,#2a1520_0%,#14141a_60%,#2a1520_100%)]">
+                <Image
+                  src={caseStudy.thumbnail}
+                  alt={`${caseStudy.title} web sitesi`}
+                  width={1552}
+                  height={792}
+                  sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
+                  className="h-auto w-full rounded-lg shadow-[0_20px_40px_-18px_rgba(20,10,30,0.30)] translate-y-1 transition-transform duration-500 group-hover:-translate-y-1"
+                  itemProp="image"
+                />
+              </figure>
+              <div className="space-y-2 p-6">
+                <h2 className="text-heading-5 font-normal" itemProp="name">
+                  {caseStudy.title}
+                </h2>
+                <p itemProp="description">{caseStudy.description}</p>
               </div>
-            </article>
-          </RevealAnimation>
-        ))}
-      </div>
-    </>
+            </div>
+          </article>
+        </RevealAnimation>
+      ))}
+    </div>
   );
 };
 

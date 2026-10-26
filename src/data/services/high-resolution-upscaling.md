@@ -5,6 +5,7 @@ featured: true
 order: 4
 coverImg: '/images/home-page-36/service-03.jpg'
 icon: 'ns-shape-16'
+image3d: '/images/codyol/3d/integration.webp'
 newFeature: true 
 image: '/images/home-page-1/services-big-data-consulting.svg'
 userReview:

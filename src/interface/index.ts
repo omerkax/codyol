@@ -44,6 +44,7 @@ export interface IService {
   id: number;
   title: string;
   icon: string;
+  image3d?: string;
   description: string;
   image: string;
   image2?: string;

@@ -4,6 +4,7 @@ description: 'Chatbotlar, doküman analizi, akıllı arama ve süreç otomasyonl
 featured: true
 order: 3
 icon: 'ns-shape-3'
+image3d: '/images/codyol/3d/ai.webp'
 image: '/images/home-page-1/services-asset-1.svg'
 coverImg: '/images/services/service-details-1.png'
 userReview: 

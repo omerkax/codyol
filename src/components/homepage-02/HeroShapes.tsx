@@ -1,71 +1,55 @@
-import heroShape1 from '@public/images/home-page-2/1.png';
-import heroShape2 from '@public/images/home-page-2/7.png';
-import heroShape3 from '@public/images/home-page-2/5.png';
-import heroShape4 from '@public/images/home-page-2/11.png';
-import heroShape6 from '@public/images/home-page-2/6.png';
-import heroShape8 from '@public/images/home-page-2/9.png';
+import capsule from '@public/images/codyol/3d/capsule.webp';
+import cube from '@public/images/codyol/3d/cube.webp';
+import sphere from '@public/images/codyol/3d/sphere.webp';
+import torus from '@public/images/codyol/3d/torus.webp';
 import Image from 'next/image';
-import RevealAnimation from '../animation/RevealAnimation';
+
+// Hero'nun kenarlarında süzülen 3D marka objeleri (dekoratif)
+const shapes = [
+  {
+    src: torus,
+    className: 'top-[12%] left-[-6%] w-[110px] sm:w-[150px] md:left-[2%] xl:left-[6%] xl:w-[190px]',
+    depth: '1.6',
+    x: '1',
+    y: '0.6',
+  },
+  {
+    src: cube,
+    className: 'top-[8%] right-[-4%] w-[80px] sm:w-[110px] md:right-[6%] xl:right-[11%] xl:w-[130px]',
+    depth: '2.2',
+    x: '1',
+    y: '1',
+  },
+  {
+    src: sphere,
+    className: 'top-[44%] right-[-6%] hidden w-[110px] sm:block md:right-[1%] xl:right-[4%] xl:w-[150px]',
+    depth: '1.8',
+    x: '0.8',
+    y: '-0.8',
+  },
+  {
+    src: capsule,
+    className: 'top-[52%] left-[1%] hidden w-[80px] sm:block xl:left-[9%] xl:w-[110px]',
+    depth: '1.9',
+    x: '0.6',
+    y: '-1',
+  },
+];
 
 const HeroShapes = () => {
   return (
-    <>
-   
-      <RevealAnimation delay={0.1}>
+    <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+      {shapes.map((shape, i) => (
         <figure
-          className="dark:bg-accent/5 parallax-effect absolute top-[15%] left-[8%] -z-10 h-[50px] w-[50px] shrink-0 rounded-full  bg-white p-[3px] max-[426px]:size-10 md:top-[22%] md:left-[19%] xl:top-[22%] xl:left-[26%]"
-          data-parallax-value="1.8"
-          data-parallax-x="1"
-          data-parallax-y="0.5">
-          <Image src={heroShape1} alt="Hero shape 1" className="size-11 rounded-full max-[426px]:size-8" />
+          key={i}
+          className={`parallax-effect absolute ${shape.className}`}
+          data-parallax-value={shape.depth}
+          data-parallax-x={shape.x}
+          data-parallax-y={shape.y}>
+          <Image src={shape.src} alt="" priority className="h-auto w-full drop-shadow-[0_24px_30px_rgba(230,45,94,0.18)]" />
         </figure>
-      </RevealAnimation>
-      <RevealAnimation delay={0.1}>
-        <figure
-          className="dark:bg-accent/5 parallax-effect absolute top-[15%] right-[12%] -z-10 h-[50px] w-[50px] shrink-0 rounded-full  bg-white p-[3px] max-[426px]:size-10 md:top-[19%] md:right-[20%] xl:top-[19%] xl:right-[24%]"
-          data-parallax-value="2.4"
-          data-parallax-x="1"
-          data-parallax-y="1">
-          <Image src={heroShape2} alt="Hero shape 2" className="size-11 rounded-full max-[426px]:size-8" />
-        </figure>
-      </RevealAnimation>
-      <RevealAnimation delay={0.1}>
-        <figure
-          className="dark:bg-accent/5 parallax-effect absolute bottom-[16%] left-[7%] -z-10 hidden h-[50px] w-[50px] shrink-0 rounded-full bg-white p-[3px] max-[426px]:size-10 sm:block md:bottom-[18%] md:left-[8%] xl:bottom-[18%] xl:left-[14%]"
-          data-parallax-value="1.8"
-          data-parallax-x="0.7"
-          data-parallax-y="-1">
-          <Image src={heroShape3} alt="Hero shape 3" className="size-11 rounded-full max-[426px]:size-8" />
-        </figure>
-      </RevealAnimation>
-      <RevealAnimation delay={0.1}>
-        <figure
-          className="dark:bg-accent/5parallax-effect absolute right-[10%] bottom-[15%] -z-10 hidden h-[50px] w-[50px] shrink-0 rounded-full bg-white p-[3px] max-[426px]:size-10 sm:block md:right-[25%] md:bottom-[15%] xl:right-[28%] xl:bottom-[15%]"
-          data-parallax-value="1.9"
-          data-parallax-x="1"
-          data-parallax-y="-0.7">
-          <Image src={heroShape4} alt="Hero shape 4" className="size-11 rounded-full max-[426px]:size-8" />
-        </figure>
-      </RevealAnimation>
-      <RevealAnimation delay={0.1}>
-        <figure
-          className="dark:bg-accent/5 parallax-effect absolute top-[40%] right-[0%] -z-10 h-[50px] w-[50px] shrink-0 rounded-full  bg-white p-[3px] max-[426px]:size-10 md:top-[30%] md:right-[5%] xl:top-[32%] xl:right-[10%]"
-          data-parallax-value="1.7"
-          data-parallax-x="1"
-          data-parallax-y="0.8">
-          <Image src={heroShape6} alt="Hero shape 6" className="size-11 rounded-full max-[426px]:size-8" />
-        </figure>
-      </RevealAnimation>
-      <RevealAnimation delay={0.1}>
-        <figure
-          className="dark:bg-accent/5 parallax-effect absolute top-[32%] left-[0%] -z-10 h-[50px] w-[50px] shrink-0 rounded-full  bg-white p-[3px] max-[426px]:size-10 md:top-[42%] md:left-[3%] xl:top-[42%] xl:left-[8%]"
-          data-parallax-value="1.7"
-          data-parallax-x="0.5"
-          data-parallax-y="-1">
-          <Image src={heroShape8} alt="Hero shape 8" className="size-11 rounded-full max-[426px]:size-8" />
-        </figure>
-      </RevealAnimation>
-    </>
+      ))}
+    </div>
   );
 };
 

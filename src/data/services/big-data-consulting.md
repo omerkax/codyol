@@ -4,6 +4,7 @@ description: 'Kullanıcı odaklı, sade ve etkili arayüzler tasarlıyoruz. Diji
 order: 3
 showOnHome: true
 icon: 'ns-shape-43'
+image3d: '/images/codyol/3d/uiux.webp'
 image: '/images/home-page-1/services-big-data-consulting.svg'
 coverImg: '/images/services/service-big-data-consulting-cover.png'
 userReview:

@@ -15,7 +15,7 @@ after:
   - 'Personalized learning paths'
   - 'Automated grading and instant feedback'
   - 'Seamless remote & hybrid learning'
-thumbnail: '/images/avatar/KartepeGrup.png'
+thumbnail: '/images/codyol/projects/KartepeGrup.webp'
 keyFeatures:
   - 'AI-powered personalized learning paths'
   - 'Automated grading and feedback system'

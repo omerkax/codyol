@@ -4,6 +4,7 @@ description: 'Ekipler için yazılım, yapay zeka ve dijital ürün geliştirme 
 featured: true
 order: 5
 icon: 'ns-shape-9'
+image3d: '/images/codyol/3d/education.webp'
 image: '/images/home-page-1/services-crypto-lending.svg'
 coverImg: '/images/services/service-crypto-cover.png'
 userReview: 

@@ -5,7 +5,8 @@ order: 1
 showOnHome: true
 coverImg: '/images/home-page-36/service-02.png'
 newFeature: true
-icon: 'ns-shape-33' 
+icon: 'ns-shape-33'
+image3d: '/images/codyol/3d/saas.webp' 
 image: '/images/home-page-1/services-big-data-consulting.svg'
 userReview:
   name: 'Noah Clarke'

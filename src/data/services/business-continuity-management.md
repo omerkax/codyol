@@ -4,6 +4,7 @@ description: 'SEO, performans reklamları ve büyüme odaklı stratejilerle diji
 order: 5
 showOnHome: true
 icon: 'ns-shape-75'
+image3d: '/images/codyol/3d/growth.webp'
 image: '/images/home-page-1/services-big-data-consulting.svg'
 coverImg: '/images/services/service-big-data-consulting-cover.png'
 userReview:

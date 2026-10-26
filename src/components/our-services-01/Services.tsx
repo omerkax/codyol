@@ -1,5 +1,6 @@
 import { IService } from '@/interface';
 import getMarkDownData from '@/utils/getMarkDownData';
+import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import SectionHeader from '@/components/shared/SectionHeader';
@@ -41,7 +42,11 @@ const servicesData = getMarkDownData('src/data/services')
               <div className="col-span-12 md:col-span-6 xl:col-span-4">
                 <div className="px-6 py-8 rounded-[20px] bg-background-3 dark:bg-background-7 space-y-6 text-center grid items-center justify-center hover:translate-y-[-10px] transition-transform duration-500 ease-in-out">
                   <div className="flex items-center justify-center">
-                    <span className={`${service.icon} text-[52px] text-secondary dark:text-accent`} />
+                    {service.image3d ? (
+                      <Image src={service.image3d} alt="" aria-hidden="true" width={96} height={96} className="size-24 object-contain" />
+                    ) : (
+                      <span className={`${service.icon} text-[52px] text-secondary dark:text-accent`} />
+                    )}
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-heading-5 line-clamp-1">{service.title}</h3>
