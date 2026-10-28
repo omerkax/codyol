@@ -1,5 +1,5 @@
 import corelinkImg from '@public/images/codyol/products/corelink.webp';
-import klubyolImg from '@public/images/codyol/products/klubyol.webp';
+import clubyolImg from '@public/images/codyol/products/clubyol.webp';
 import labyolImg from '@public/images/codyol/products/labyol.webp';
 import plotyolImg from '@public/images/codyol/products/plotyol.webp';
 import { StaticImageData } from 'next/image';
@@ -43,16 +43,16 @@ export const products: Product[] = [
     color: '#2563eb',
   },
   {
-    slug: 'klubyol',
-    name: 'Klubyol',
+    slug: 'clubyol',
+    name: 'Clubyol',
     category: 'Spor Kulüpleri',
     tagline: 'Amatör futbol kulüplerine hazır web sitesi',
     description:
       'Kulüpler; haber, fikstür, kadro, galeri ve sponsorlarını tek panelden yönetir. Alan adı, kurulum ve yayına alma süreci otomatik ilerler.',
     features: ['Kulübe özel hazır şablonlar', 'Haber, fikstür ve kadro yönetimi', 'Otomatik alan adı ve yayın'],
-    image: klubyolImg,
+    image: clubyolImg,
     color: '#16a34a',
-    url: 'https://klubyol.com.tr',
+    url: 'https://clubyol.com',
   },
   {
     slug: 'corelink',

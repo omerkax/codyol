@@ -1,5 +1,5 @@
 import plotyolImg from '@public/images/codyol/products/plotyol.webp';
-import klubyolImg from '@public/images/codyol/products/klubyol.webp';
+import clubyolImg from '@public/images/codyol/products/clubyol.webp';
 import labyolImg from '@public/images/codyol/products/labyol.webp';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,8 +17,8 @@ const HeroShowcase = () => {
           {/* sol */}
           <figure className="absolute top-[18%] left-0 hidden w-[44%] -rotate-[5deg] transition-transform duration-500 group-hover:-translate-x-2 md:block">
             <Image
-              src={klubyolImg}
-              alt="Klubyol örnek panel ekranı"
+              src={clubyolImg}
+              alt="Clubyol örnek panel ekranı"
               sizes="(min-width: 768px) 480px, 0px"
               className="h-auto w-full rounded-lg opacity-90 shadow-[0_24px_50px_-20px_rgba(20,10,30,0.30)]"
             />

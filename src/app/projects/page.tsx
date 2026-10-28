@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = generateMetadata(
   'Ürünler ve Referanslar - Codyol',
-  'PlotYol, LabYol, Klubyol ve Corelink gibi Codyol SaaS ürünleri ile markalar için geliştirdiğimiz kurumsal web siteleri.',
+  'PlotYol, LabYol, Clubyol ve Corelink gibi Codyol SaaS ürünleri ile markalar için geliştirdiğimiz kurumsal web siteleri.',
   'https://codyol.com/projects'
 );
  
