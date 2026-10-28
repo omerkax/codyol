@@ -26,9 +26,9 @@ const CaseStudyPaginationWrapper = ({ caseStudies }: CaseStudyPaginationWrapperP
                 />
               </figure>
               <div className="space-y-2 p-6">
-                <h2 className="text-heading-5 font-normal" itemProp="name">
+                <h3 className="text-heading-5 font-normal" itemProp="name">
                   {caseStudy.title}
-                </h2>
+                </h3>
                 <p itemProp="description">{caseStudy.description}</p>
               </div>
             </div>

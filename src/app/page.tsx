@@ -6,7 +6,7 @@ import Services from '@/components/homepage-13/Services';
 import MeetOurTeam from '@/components/homepage-19/MeetOurTeam';
 import FooterThree from '@/components/shared/footer/FooterThree';
 import Hero2 from '@/components/homepage-02/Hero';
-import ProjectsShowcase from '@/components/codyol/ProjectsShowcase';
+import ProductsShowcase from '@/components/codyol/ProductsShowcase';
  
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
@@ -30,7 +30,7 @@ const HomePage = () => {
         <ClientsMarquee />
         <Integration />
         <Services />
-        <ProjectsShowcase />
+        <ProductsShowcase />
         <MeetOurTeam />
         <CTA />
       </main>
